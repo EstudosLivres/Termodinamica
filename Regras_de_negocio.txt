@@ -1,0 +1,3 @@
+O que não pode fornecer (Termo):
+1- Sempre é obrigado a preencher a linha toda (completar o objeto).
+2- Validar todos os campos se eles pertencem a mesma linha do excel, caso não, informar que está errado.
