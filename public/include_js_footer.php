@@ -7,6 +7,11 @@
 </script>
 
 <script type="text/javascript">
+    var time_animate = 1500;
+    
+    $(document).ready(function (){
+        $("#alerta_erro").slideToggle(500); //faz o alerta sumir
+    });
 
     function carregaInputs() {
         entrada1 = $("#entrada1").val(), entrada2 = $("#entrada2").val(), volume1 = $("#volume1").val(), volume2 = $("#volume2").val(),
@@ -28,7 +33,7 @@
 
     //Retorna uma array com os itens que devem levar tooltip na testa
     function validaArray(array) {
-
+        
     }//fim do valida array
 
     $("#btn_verificar").click(function() {
