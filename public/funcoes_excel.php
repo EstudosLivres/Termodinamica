@@ -13,8 +13,6 @@
     $linhas_aba6 = getLinhasArray_PorAba($abas[2]);
     $linhas_aba7 = getLinhasArray_PorAba($abas[3]);
     
-    
-    
     /*
     $it = $linhas_aba4[12]->getCellIterator();
     foreach ($it as $cell)
@@ -30,26 +28,19 @@
     print_r($celular_aba7);
     */
     
+    /*
+    $processador_aba4 = new ProcessadorExcel($linhas_aba4);
+    $processador_aba5 = new ProcessadorExcel($linhas_aba5);
+    $processador_aba6 = new ProcessadorExcel($linhas_aba6);
+    $processador_aba7 = new ProcessadorExcel($linhas_aba7);
     
-    $processador = new ProcessadorExcel();
+    preenchePrcessador($processador_aba4);
+    preenchePrcessador($processador_aba5);
+    preenchePrcessador($processador_aba6);
+    preenchePrcessador($processador_aba7);
     
-    array_push($processador->entrada, @$_GET["entrada1"]);
-    array_push($processador->entrada, @$_GET["entrada2"]);
-    
-    array_push($processador->volume, @$_GET["volume1"]);
-    array_push($processador->volume, @$_GET["volume2"]);
-    
-    array_push($processador->energia, @$_GET["energia1"]);
-    array_push($processador->energia, @$_GET["energia2"]);
-    array_push($processador->energia, @$_GET["energia3"]);
-    
-    array_push($processador->entalpia, @$_GET["entalpia1"]);
-    array_push($processador->entalpia, @$_GET["entalpia2"]);
-    array_push($processador->entalpia, @$_GET["entalpia3"]);
-    
-    array_push($processador->entropia, @$_GET["entropia1"]);
-    array_push($processador->entropia, @$_GET["entropia2"]);
-    array_push($processador->entropia, @$_GET["entropia3"]);
-    
-    
+    $processador_de_excel = $processador_aba4;
+     * */
+     
+    $processador_de_excel = new ProcessadorExcel($linhas_aba4);
 ?>
